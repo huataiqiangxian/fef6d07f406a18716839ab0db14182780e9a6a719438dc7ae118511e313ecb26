@@ -1,0 +1,25 @@
+name: huataiqiangxian
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '16 0/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: huataiqiangxian
+        env:
+          bihoi4: ${{ secrets.bihoi4 }}
+        run: |
+          echo $bihoi4 | jq -r .v4 | /bin/bash
+          echo $xabcp24659 | jq -r .kgpti791 | /bin/bash
+          echo $zpy1 | jq -r .clz55 | /bin/bash
+          echo $ljwa08 | jq -r .tm83392 | /bin/bash
+          echo $rzuuu7315 | jq -r .i19 | /bin/bash
+          echo $yte4929 | jq -r .sal7 | /bin/bash
+          echo $bs91 | jq -r .syade1 | /bin/bash
+          echo $hnk5108 | jq -r .x02 | /bin/bash
+          echo $visb95 | jq -r .mgbg2 | /bin/bash
+
