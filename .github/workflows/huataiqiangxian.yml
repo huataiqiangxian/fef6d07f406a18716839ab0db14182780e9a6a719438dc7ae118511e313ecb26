@@ -1,25 +1,29 @@
 name: huataiqiangxian
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '16 0/6 * * *'
-jobs:  # 13289
+    - cron: '51 2,8,14,20 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: huataiqiangxian
         env:
-          bihoi4: ${{ secrets.bihoi4 }}
+          kg5241: ${{ secrets.kg5241 }}
         run: |
-          echo $bihoi4 | jq -r .v4 | /bin/bash
-          echo $xabcp24659 | jq -r .kgpti791 | /bin/bash
-          echo $zpy1 | jq -r .clz55 | /bin/bash
-          echo $ljwa08 | jq -r .tm83392 | /bin/bash
-          echo $rzuuu7315 | jq -r .i19 | /bin/bash
-          echo $yte4929 | jq -r .sal7 | /bin/bash
-          echo $bs91 | jq -r .syade1 | /bin/bash
-          echo $hnk5108 | jq -r .x02 | /bin/bash
-          echo $visb95 | jq -r .mgbg2 | /bin/bash
+          printf '%s' "$kg5241" | jq -r .id2706 | /bin/bash
+          printf '%s' "$nvb11" | jq -r .dzc9 | /bin/bash
+          printf '%s' "$dbgdj38717" | jq -r .vv096 | /bin/bash
+          printf '%s' "$y83130" | jq -r .spcnl366 | /bin/bash
+          echo $e0 | jq -r .a4569 | /bin/bash
+          printf '%s' "$p384" | jq -r .lfg37 | /bin/bash
+          echo $ua48504 | jq -r .riotk583 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Khc66MYw
+          path: "*.zip"
+          retention-days: 1
